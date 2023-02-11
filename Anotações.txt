@@ -1,0 +1,10 @@
+01_Primeiro_Programa
+
+    Compilação do programa java:
+        Javac Programa.java
+
+    Execução do programa:
+        Java Programa
+    
+-----------------------------------------------------------------------------------------------------
+
