@@ -1,4 +1,5 @@
 // Objeto/Instância do tipo conta
+
 public class CriaConta {
 	public static void main(String[] args) {
 		
@@ -31,6 +32,7 @@ public class CriaConta {
 		//----------------------------------------
 		
 		// Aqui é feito o teste das duas referências
+		
 		if (primeiraConta == segundaConta) {
 			System.out.println("são a mesma conta");
 		} else {

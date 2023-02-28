@@ -3,6 +3,7 @@ public class TesteReferencias {
 	public static void main(String[] args) {
 		
 		// primeiraConta é um referência para o objeto do tipo Conta
+		
 		Conta primeiraConta = new Conta();
 		primeiraConta.saldo = 300;
 		
@@ -11,6 +12,7 @@ public class TesteReferencias {
 		//----------------------------------------
 		
 		// segundaConta recebe a referência primeiraConta
+		
 		Conta segundaConta = primeiraConta;
 		
 		System.out.println("saldo da segunda conta: " + segundaConta.saldo);
@@ -25,6 +27,7 @@ public class TesteReferencias {
 		//----------------------------------------
 		
 		// Aqui é feito o teste das duas referências
+		
 		if (primeiraConta == segundaConta) {
 			System.out.println("são a mesmissima conta");
 		}
