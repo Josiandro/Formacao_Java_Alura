@@ -1,24 +1,33 @@
-// Classe Conta que é na verdade a especição do tipo Conta
-
+// Classe Conta
 public class Conta {
+	// Atributos da classe Conta
 	double saldo;
 	int agencia = 42;
 	int numero;
 	String titular;
 	
-	// Dentro da classe estão os campos, atributos ou propriedades da conta
+	//----------------------------------------
+	
+	// Método para fazer depósitos na conta
+	public void deposita(double valor) { 
+		this.saldo += valor;
+	}		
 	
 	//----------------------------------------
 	
-	// Comportamentos/métodos da classe Conta, o método sempre inicia com letra minúscula	
-	// O void é usado quando não tem retorno do método, ou seja, é vazio
-	
-	void deposita(double valor) { 
-		this.saldo = this.saldo + valor;
+	// Método para fazer saques na conta
+	public boolean saca(double valor) {		
+		if (this.saldo >= valor) {			
+			this.saldo -= valor;
+			return true;			
+		} else {			
+			return false;			
+		}
 	}
-
-	// O this não é obrigatório no momento, mas ele indica a alteração NESTA conta
 	
 	//----------------------------------------
+	
+	
+	
 }
 

@@ -1,8 +1,7 @@
-// Objeto/Instância do tipo conta
-
 public class CriaConta {
 	public static void main(String[] args) {
 		
+		// Aqui está sendo instânciado o objeto primeiraConta da classe Conta
 		Conta primeiraConta = new Conta();	
 		
 		primeiraConta.saldo = 200;
@@ -13,6 +12,7 @@ public class CriaConta {
 		
 		//----------------------------------------
 		
+		// Aqui está sendo instânciado o objeto segundaConta da classe Conta
 		Conta segundaConta = new Conta ();
 		
 		segundaConta.saldo = 50;
@@ -31,8 +31,7 @@ public class CriaConta {
 		
 		//----------------------------------------
 		
-		// Aqui é feito o teste das duas referências
-		
+		// Aqui sendo feito o teste das duas referências		
 		if (primeiraConta == segundaConta) {
 			System.out.println("são a mesma conta");
 		} else {
