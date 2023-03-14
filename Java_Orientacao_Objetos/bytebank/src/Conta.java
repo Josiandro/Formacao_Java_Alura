@@ -33,5 +33,29 @@ public class Conta {
 	
 	//---------------------------------------------------------------------------------
 
+	// Método para fazer transferências
+	public boolean transfere(double valor, Conta destino) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			destino.deposita(valor);
+			return true;
+		} 
+	
+		return false;
+	} 
+	
+	// Método para fazer transferências usando o saca()
+	public boolean transfere2(double valor, Conta destino) {
+		if (this.saca(valor)) {
+			destino.deposita(valor);
+			return true;
+		} 
+		
+		return false;
+	}
+	
+	//---------------------------------------------------------------------------------
+	
+	
 }
 

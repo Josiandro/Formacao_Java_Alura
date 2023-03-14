@@ -14,18 +14,33 @@ public class TestaMetodo {
 		
 		// Aqui está invocando o método deposita() para depositar um valor na contaDoPaulo
 		contaDoPaulo.deposita(50);		
-		System.out.println(contaDoPaulo.saldo);
+		System.out.println("saldo da contaDoPaulo: " + contaDoPaulo.saldo);
 		
 		//---------------------------------------------------------------------------------
 		
 		// Aqui está invocando o método saca() para retirar um valor da contaDoPaulo		
-		contaDoPaulo.saca(30);
-		System.out.println(contaDoPaulo.saldo);
+		contaDoPaulo.saca(20);
+		System.out.println("saldo da contaDoPaulo: " + contaDoPaulo.saldo);
 		
 		//---------------------------------------------------------------------------------
 		
 		// Aqui está invocando o mesmo método saca(), porém está usando o retorno boolean
 		boolean conseguiuRetirar = contaDoPaulo.saca(20);
 		System.out.println("Conseguiu retirar: " + conseguiuRetirar);
+		
+		//---------------------------------------------------------------------------------
+		
+		// Aqui está instânciando o objeto contaDaMarcela
+		Conta contaDaMarcela = new Conta();
+		contaDaMarcela.deposita(1000);
+		
+		if (contaDaMarcela.transfere(300, contaDoPaulo)) {
+			System.out.println("(contaDamarcela) transferência com sucesso");
+		} else {
+			System.out.println("(contaDamarcela) faltou dinheiro");
+		}
+		
+		System.out.println("saldo da contaDaMarcela: " + contaDaMarcela.saldo);
+		System.out.println("saldo da contaDoPaulo: " + contaDoPaulo.saldo);
 	}
 }
