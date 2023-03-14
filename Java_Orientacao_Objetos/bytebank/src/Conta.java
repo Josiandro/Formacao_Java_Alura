@@ -44,7 +44,7 @@ public class Conta {
 		return false;
 	} 
 	
-	// Método para fazer transferências usando o saca()
+	// Método para fazer transferências reaproveitando o método saca()
 	public boolean transfere2(double valor, Conta destino) {
 		if (this.saca(valor)) {
 			destino.deposita(valor);

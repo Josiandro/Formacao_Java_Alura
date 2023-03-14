@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------------------
 // Aqui estão sendo invocados os métodos criados para a classe Conta() e assim testamos
-// o uso de cada método
+// o uso de cada um
 //-----------------------------------------------------------------------------------------
 
 public class TestaMetodo {
@@ -30,10 +30,13 @@ public class TestaMetodo {
 		
 		//---------------------------------------------------------------------------------
 		
-		// Aqui está instânciando o objeto contaDaMarcela
+		// Aqui está instânciando o objeto contaDaMarcela, usado no próximo método
 		Conta contaDaMarcela = new Conta();
 		contaDaMarcela.deposita(1000);
 		
+		//---------------------------------------------------------------------------------
+		
+		// Aqui está invocando o método transfere() para transferir um valor da conta da Marcela, para a conta do Paulo		
 		if (contaDaMarcela.transfere(300, contaDoPaulo)) {
 			System.out.println("(contaDamarcela) transferência com sucesso");
 		} else {

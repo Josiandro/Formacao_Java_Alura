@@ -21,6 +21,7 @@ public class TesteReferencias {
 		
 		//---------------------------------------------------------------------------------
 		
+		// Aqui está sendo atribuido valor ao atributo saldo da segunda conta, porém a primeira também recebe, visto que a segunda usa a mesma referência
 		segundaConta.saldo += 100;
 		
 		System.out.println("saldo da segunda conta: " + segundaConta.saldo);

@@ -26,6 +26,7 @@ public class CriaConta {
 		
 		//---------------------------------------------------------------------------------
 		
+		// Aqui estão sendo atribuidos valores as atributos das duas contas
 		System.out.println(primeiraConta.agencia);
 		System.out.println(primeiraConta.numero);
 		
@@ -36,7 +37,7 @@ public class CriaConta {
 		
 		//---------------------------------------------------------------------------------
 		
-		// Aqui sendo feito o teste das duas referências		
+		// Aqui sendo feito o teste das duas referências das contas/objetos		
 		if (primeiraConta == segundaConta) {
 			System.out.println("são a mesma conta");
 		} else {
